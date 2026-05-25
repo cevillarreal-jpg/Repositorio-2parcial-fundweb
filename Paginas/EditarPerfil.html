@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Perfil</title>
+    <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; 
+    background-color: #f5f5f5; margin: 0; padding: 0;">
+
+    <h1 style="text-align: center; color: #1a1a1a; 
+    margin-top: 30px;">
+        Editar Perfil
+    </h1>
+
+    <div style="width: 600px; margin: 30px auto; background-color: white; 
+    border-radius: 15px; padding: 30px; box-shadow: 0 4px 6px;">
+
+        <h2 style="color: #333;">
+            Información Personal
+        </h2>
+
+        <form method="get" action="panelUsuario.html">
+
+            <label style="display:block; margin-top:15px; font-weight:bold;">
+                Nombre Completo:
+            </label>
+
+            <input type="text" id="nombre" name="nombre"
+            value="Christopher Villarreal"
+            style="width: 100%; padding: 10px; border-radius: 8px; 
+            border: 1px solid gray; margin-top:5px;">
+
+            <label style="display:block; margin-top:15px; font-weight:bold;">
+                Correo Electrónico:
+            </label>
+
+            <input type="email" id="email" name="email"
+            value="christopher@example.com"
+            style="width: 100%; padding: 10px; border-radius: 8px; 
+            border: 1px solid gray; margin-top:5px;">
+
+            <label style="display:block; margin-top:15px; font-weight:bold;">
+                Teléfono:
+            </label>
+
+            <input type="text" id="telefono" name="telefono"
+            value="0980372175"
+            style="width: 100%; padding: 10px; border-radius: 8px; 
+            border: 1px solid gray; margin-top:5px;">
+
+            <label style="display:block; margin-top:15px; font-weight:bold;">
+                Nivel Académico:
+            </label>
+
+            <select id="nivel" name="nivel"
+            style="width: 100%; padding: 10px; border-radius: 8px; 
+            border: 1px solid gray; margin-top:5px;">
+
+                <option>Primer Nivel</option>
+                <option>Segundo Nivel</option>
+                <option>Tercer Nivel</option>
+
+            </select>
+
+            <h2 style="color: #333; margin-top: 25px;">
+                Materias que puedes enseñar
+            </h2>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+
+                <label style="background-color: #87ceeb; padding: 10px; 
+                border-radius: 8px; cursor: pointer;">
+
+                    <input type="checkbox" id="materias"
+                    name="materias"
+                    value="Programación"
+                    checked
+                    style="margin-right:5px;">
+
+                    Programación
+
+                </label>
+
+                <label style="background-color: #dda0dd; padding: 10px; 
+                border-radius: 8px; cursor: pointer;">
+
+                    <input type="checkbox" id="materias"
+                    name="materias"
+                    value="Admin Sistemas"
+                    style="margin-right:5px;">
+
+                    Admin Sistemas
+
+                </label>
+
+                <label style="background-color: #ffb347; padding: 10px; 
+                border-radius: 8px; cursor: pointer;">
+
+                    <input type="checkbox" id="materias"
+                    name="materias"
+                    value="Fundamentos Web"
+                    style="margin-right:5px;">
+
+                    Fundamentos Web
+
+                </label>
+
+            </div>
+
+            <h2 style="color: #333; margin-top: 25px;">
+                Materias que deseas aprender
+            </h2>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; 
+            margin-top: 10px;">
+
+                <label style="background-color: #90ee90; padding: 10px; 
+                border-radius: 8px; cursor: pointer;">
+
+                    <input type="checkbox" id="materias"
+                    name="materias"
+                    value="Base de Datos"
+                    checked
+                    style="margin-right:5px;">
+
+                    Base de Datos
+
+                </label>
+
+                <label style="background-color: #87ceeb; padding: 10px; 
+                border-radius: 8px; cursor: pointer;">
+
+                    <input type="checkbox" id="materias"
+                    name="materias"
+                    value="Programación"
+                    style="margin-right:5px;">
+
+                    Programación
+
+                </label>
+
+            </div>
+
+            <button style="background-color: #1a1a1a; color: white; 
+            border-radius: 10px; width: 260px; height: 50px; font-size: 18px; 
+            font-weight: bold; border: 1px solid #1a1a1a; margin-top: 30px;">
+
+                Guardar Cambios
+
+            </button>
+
+            <button style="background-color: #d3d3d3; color: black; 
+            border-radius: 10px; width: 260px; height: 50px; font-size: 18px; 
+            font-weight: bold; border: 1px solid #d3d3d3; margin-left: 40px;">
+
+                Cancelar
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
