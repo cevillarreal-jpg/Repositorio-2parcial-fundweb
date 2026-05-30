@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 238, 238);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(10, 10, 32);
+    font-weight: bold;
+}
+
+button{
+    background-color: rgb(10, 10, 32);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(20,20,20);
+    transform: scale(1.03);
+}
+
+h1{
+    font-size: 28px;
+    color: rgb(20,20,20)
+}
+
+
+h2{
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(112, 111, 111);
+    margin-bottom: 20px;
+}
+
+
+h3{
+    margin-bottom: 7px;
+    font-size: 16px;
+
+}
+
+input{
+    border-radius: 10px;
+    height: 45px;
+    border: 2px solid gray;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+
+select{
+    border-radius: 10px;
+    height: 45px;
+    border: 2px solid gray;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+button a{
+    color: white;
+}
+
+nav a{
+    text-decoration: none; 
+    color: black; font-weight: bold;
+    font-size: 120%;
+}
+
+nav a:hover{
+    background-color: rgb(253, 253, 253);
+    font-size: 140%;
+}
+
+.ImagenesR{
+    width: 120px;
+}
+
+#recordar{
+    margin-left: 20px;
+}
+
+.check{
+    transform: scale(1.5);
+}
+
+#logo_login{
+    width: 90px;
+}
+
+#login{
+    background-color: white;
+    width: 100%;
+    max-width: 380px;
+    min-height: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_c{
+    text-align: center;
+}
+
+.boton_login{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input_login{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.ImagenesRegistro{
+    width: 80px;
+}
+
+.imgMaterias{
+    width: 40px;
+}
