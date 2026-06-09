@@ -1,0 +1,16 @@
+#encabezado{
+    background-color: rgb(2, 5, 19);
+    width: auto;
+    height: 70px;
+    margin-bottom: 0px;
+}
+
+#encabezado h1{
+    color: white;
+    padding-top: 20px;
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+}

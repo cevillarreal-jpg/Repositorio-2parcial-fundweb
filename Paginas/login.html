@@ -7,42 +7,33 @@
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
     <link rel="stylesheet" href="../Estilos/General.css">
+    <link rel="stylesheet"  href="../Estilos/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body style="display: flex; justify-content: center; align-items: center;
-min-height: 100vh; padding: 20px;">
-
+<body>
     <section id="login">
-
-        <div class="div_c">
-
+        <div>
             <img src="../Recursos/login/circulito.jpg"
             alt="Login"
             id="logo_login">
-
-            <h1 style="margin-top: 20px;">
+            <h1>
                 SaberCompartido
             </h1>
-
-            <h2 style="width: 90%; margin-left: auto; margin-right: auto;">
+            <h2>
                 Sistema de asesoramiento académico
             </h2>
-
         </div>
+
 
         <form method="post" action="panelUsuario.html">
 
-            <h3 style="margin-top: 35px;">
+            <h3>
                 Correo Electrónico:
             </h3>
 
-            <div style="display: flex; align-items: center;">
-
-                <i class="fa-solid fa-at"
-                style="color: rgb(78, 78, 78);
-                margin-right: 10px;"></i>
-
+            <div class="entrada">
+                <i class="fa-solid fa-at"></i>
                 <input
                 type="email"
                 id="correo"
@@ -50,19 +41,14 @@ min-height: 100vh; padding: 20px;">
                 placeholder="usuario@ejemplo.com"
                 required
                 class="input_login">
-
             </div>
 
-            <h3 style="margin-top: 25px;">
+            <h3>
                 Contraseña:
             </h3>
 
-            <div style="display: flex; align-items: center;">
-
-                <i class="fa-solid fa-lock"
-                style="color: rgb(78, 78, 78);
-                margin-right: 10px;"></i>
-
+            <div class="entrada">
+                <i class="fa-solid fa-lock"></i>
                 <input
                 type="password"
                 id="contrasena"
@@ -74,67 +60,43 @@ min-height: 100vh; padding: 20px;">
                 title="Debe incluir letras, números y al menos un carácter especial."
                 pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{5,10}"
                 class="input_login">
-
             </div>
 
-            <div style="display: flex;
-            align-items: center;
-            margin-top: 20px;">
 
+            <div class="entrada">
                 <input
                 type="checkbox"
                 id="recordar"
                 name="recordar"
                 class="check">
-
                 <label>
                     Recordarme
                 </label>
-
             </div>
-
             <button type="submit"
-            class="boton_login"
-            style="box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
-
+            class="boton_login">
                 Iniciar sesión
-
             </button>
-
         </form>
 
-        <div style="margin-top: 35px;
-        margin-bottom: 25px;">
-        </div>
+
+        <div class="lineadivisora"></div>
+
 
         <div class="div_c">
-
             <label>
                 ¿No tiene una cuenta?
             </label>
-
-            <a href="registro.html"
-            style="margin-left: 5px;">
-
+            <a href="registro.html">
                 Regístrarse
-
             </a>
-
             <button
-            style="width: 100%;
-            margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
-
+            class="boton_login">
                 <a href="Administrador.html">
                     Inicio Administrador
                 </a>
-
             </button>
-
         </div>
-
     </section>
-
 </body>
-
 </html>
