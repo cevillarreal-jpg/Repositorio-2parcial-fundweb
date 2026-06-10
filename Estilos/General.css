@@ -149,3 +149,27 @@ nav a:hover{
     width: 40px;
 }
 
+
+/* =====================================================
+   BLOQUE 5: Pie de página
+   ===================================================== */
+
+footer{
+    background-color: rgb(2, 5, 19);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+#derechos{
+    font-size: 18px;
+}
+
+#finalFoter{
+    margin-bottom: 0px;
+}

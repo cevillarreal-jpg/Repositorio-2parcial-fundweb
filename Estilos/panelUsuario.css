@@ -1,0 +1,336 @@
+/* BLOQUE 1: Encabezado principal */
+.header-panel {
+    background-color: white;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 4%;
+}
+
+.perfil-contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.perfil-contenedor .ImagenesR {
+    margin-right: 30px;
+}
+
+.info-usuario {
+    min-width: 250px;
+}
+
+.info-usuario h1 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.info-usuario h2 {
+    font-size: 1.5vw;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+#btn-cerrar-sesion {
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* BLOQUE 2: Sección de información personal */
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.seccion-info {
+    width: 40%;
+    margin-right: 20px;
+    min-width: 300px;
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+.seccion-materias {
+    width: 43%;
+    min-width: 320px;
+    min-height: 430px;
+    padding-bottom: 20px;
+}
+
+.encabezado-seccion {
+    display: flex;
+}
+
+.encabezado-seccion i {
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.encabezado-seccion h1 {
+    margin-top: 20px;
+}
+
+.encabezado-materias {
+    display: flex;
+}
+
+.encabezado-materias i {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.encabezado-materias h1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-info {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.texto-info h2 {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.texto-info p {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+/* BLOQUE 3: Botones de materias */
+.botones-ensenar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.btn-ensenar {
+    background-color: rgb(43, 72, 88);
+    width: 150px;
+    height: 40px;
+}
+
+.progreso-titulo {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.progress-barra {
+    margin-left: 40px;
+    width: 70%;
+    height: 35px;
+    accent-color: rgb(77, 35, 151);
+}
+
+.porcentaje {
+    font-size: 14px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.btn-aprender {
+    background-color: rgb(37, 82, 52);
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.progress-aprender {
+    margin-left: 40px;
+    width: 70%;
+    height: 35px;
+    accent-color: rgb(30, 138, 50);
+}
+
+/* BLOQUE 4: Acciones rápidas */
+.seccion-acciones {
+    width: 90%;
+    min-height: 250px;
+    margin: 30px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.seccion-acciones h1 {
+    margin-left: 5%;
+}
+
+.contenedor-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.btn-accion {
+    width: 38%;
+    min-width: 280px;
+    height: 140px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.btn-accion i {
+    font-size: 24px;
+}
+
+.btn-accion p:first-of-type {
+    font-size: 22px;
+    margin: 0;
+}
+
+.btn-accion p:last-of-type {
+    font-size: 16px;
+}
+
+/* ============================================================
+   RESPONSIVE PARA CELULAR (700px o menos)
+   ============================================================ */
+@media (max-width: 700px) {
+
+
+    .header-panel {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .perfil-contenedor {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .perfil-contenedor .ImagenesR {
+        margin-right: 15px;
+    }
+
+    .info-usuario {
+        min-width: auto;
+    }
+
+    .info-usuario h1 {
+        font-size: 20px;
+    }
+
+    .info-usuario h2 {
+        font-size: 14px;
+    }
+
+    .btn-cerrar-sesion {
+        width: 140px;
+        height: 45px;
+        margin: 0 auto;
+        font-size: 80%;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .seccion-info {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .seccion-materias {
+        width: 90%;
+    }
+
+    .encabezado-seccion i,
+    .encabezado-materias i {
+        margin-left: 15px;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .encabezado-seccion h1,
+    .encabezado-materias h1 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .texto-info {
+        margin-left: 15px;
+    }
+
+    .botones-ensenar {
+        margin-left: 15px;
+    }
+
+    .btn-ensenar {
+        width: 130px;
+        height: 35px;
+        font-size: 90%;
+    }
+
+    .progreso-titulo {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .progress-barra,
+    .progress-aprender {
+        margin-left: 15px;
+        width: 85%;
+        height: 25px;
+    }
+
+    .porcentaje {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .btn-aprender {
+        margin-left: 15px;
+        width: 140px;
+        height: 35px;
+        font-size: 80%;
+    }
+
+    .seccion-acciones {
+        width: 95%;
+    }
+
+    .seccion-acciones h1 {
+        margin-left: 3%;
+        font-size: 20px;
+    }
+
+    .contenedor-acciones {
+        margin-right: 0;
+    }
+
+    .btn-accion {
+        width: 90%;
+        margin-right: 0;
+        margin-top: 15px;
+        height: 120px;
+    }
+
+    .btn-accion p:first-of-type {
+        font-size: 18px;
+    }
+
+    .btn-accion p:last-of-type {
+        font-size: 14px;
+    }
+}

@@ -4,208 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <title>Editar Perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../Estilos/General.css">
+    <link rel="stylesheet" href="../Estilos/EditarPerfil.css">
 </head>
 
 <body>
 
-    <h1 style="text-align: center;
-    margin-top: 30px;">
+    <h1 class="titulo-editar">
         Editar Perfil
     </h1>
 
-    <div style="width: 600px;
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 6px;">
-
+    <div class="contenedor-formulario">
         <h2>
             Información Personal
         </h2>
 
-        <form method="get"
-        action="panelUsuario.html">
-
+        <form method="get" action="panelUsuario.html" class="form-editar">
             <label>
                 Nombre Completo:
             </label>
-
             <input type="text"
             id="nombre"
             name="nombre"
-            value="Christopher Villarreal"
-            style="width: 100%;
-            padding: 10px;
-            margin-top:5px;">
+            value="Christopher Villarreal">
 
             <label>
                 Correo Electrónico:
             </label>
-
             <input type="email"
             id="email"
             name="email"
-            value="christopher@example.com"
-            style="width: 100%;
-            padding: 10px;
-            margin-top:5px;">
+            value="christopher@example.com">
 
             <label>
                 Teléfono:
             </label>
-
             <input type="text"
             id="telefono"
             name="telefono"
-            value="0980372175"
-            style="width: 100%;
-            padding: 10px;
-            margin-top:5px;">
+            value="0980372175">
 
             <label>
                 Nivel Académico:
             </label>
-
-            <select id="nivel"
-            name="nivel"
-            style="width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            margin-top:5px;">
-
+            <select id="nivel" name="nivel">
                 <option>Primer Nivel</option>
                 <option>Segundo Nivel</option>
                 <option>Tercer Nivel</option>
-
             </select>
 
-            <h2 style="margin-top: 25px;">
+            <h2 class="subtitulo-materias">
                 Materias que puedes enseñar
             </h2>
 
-            <div style="display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;">
-
-                <label style="background-color: #87ceeb;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-left: 0;">
-
+            <div class="grupo-materias">
+                <label class="materia-ensenar">
                     <input type="checkbox"
                     class="check"
                     name="materias"
                     value="Programación"
-                    checked
-                    style="margin-right:5px;">
-
+                    checked>
                     Programación
-
                 </label>
 
-                <label style="background-color: #dda0dd;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-left: 0;">
-
+                <label class="materia-sistemas">
                     <input type="checkbox"
                     class="check"
                     name="materias"
-                    value="Admin Sistemas"
-                    style="margin-right:5px;">
-
+                    value="Admin Sistemas">
                     Admin Sistemas
-
                 </label>
 
-                <label style="background-color: #ffb347;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-left: 0;">
-
+                <label class="materia-fundamentos">
                     <input type="checkbox"
                     class="check"
                     name="materias"
-                    value="Fundamentos Web"
-                    style="margin-right:5px;">
-
+                    value="Fundamentos Web">
                     Fundamentos Web
-
                 </label>
-
             </div>
 
-            <h2 style="margin-top: 25px;">
+            <h2 class="subtitulo-materias">
                 Materias que deseas aprender
             </h2>
 
-            <div style="display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;">
-
-                <label style="background-color: #90ee90;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-left: 0;">
-
+            <div class="grupo-materias">
+                <label class="materia-aprender">
                     <input type="checkbox"
                     class="check"
                     name="materias"
                     value="Base de Datos"
-                    checked
-                    style="margin-right:5px;">
-
+                    checked>
                     Base de Datos
-
                 </label>
 
-                <label style="background-color: #87ceeb;
-                padding: 10px;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-left: 0;">
-
+                <label class="materia-ensenar">
                     <input type="checkbox"
                     class="check"
                     name="materias"
-                    value="Programación"
-                    style="margin-right:5px;">
-
+                    value="Programación">
                     Programación
-
                 </label>
-
             </div>
 
-            <button style="width: 260px;
-            height: 50px;
-            margin-top: 30px;">
-
+            <button class="btn-guardar">
                 Guardar Cambios
-
             </button>
 
-            <button style="width: 260px;
-            height: 50px;">
-
+            <button class="btn-cancelar">
                 Cancelar
-
             </button>
-
         </form>
-
     </div>
 
 </body>
+
+<footer>
+        <p id="derechos">
+            © 2026 - SaberCompartido
+        </p>
+        <p>
+            Sistema de asesoramiento académico - HTML Semántico y CSS Responsivo
+        </p>
+        <p id="finalFoter">
+            Plataforma de apoyo estudiantil
+        </p>
+    </footer>
 
 </html>

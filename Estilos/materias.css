@@ -87,3 +87,73 @@ button{
     justify-content: center; 
     margin-top: 40px;
 }
+
+/* ============================================================
+   RESPONSIVE (para pantallas de 700px o menos)
+   ============================================================ */
+
+@media (max-width: 700px) {
+    .contenedores {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .contenedores h1 {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    
+    .contenedores h2 {
+        font-size: 12px;
+    }
+    
+    .contenedores article {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .contenedores article p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+    .ColumnasT {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .tarjeta {
+        width: 95%;
+        height: 55px;
+        margin: 10px auto;
+    }
+    
+    .tarjeta img {
+        width: 30px;
+    }
+    
+    .tarjeta label {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    
+    .check {
+        transform: scale(1.2);
+    }
+    
+    .contBoton button {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta label {
+        font-size: 12px;
+    }
+    
+    .contBoton button {
+        font-size: 16px;
+    }
+}

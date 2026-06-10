@@ -1,0 +1,200 @@
+/* ============================================================
+   ESTILOS PARA VENTANA DE BÚSQUEDA (Busqueda.html)
+   ============================================================ */
+
+/* BLOQUE 1: Encabezado principal */
+main {
+    background-color: white;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px 3%;
+}
+
+.header-contenedor {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-contenedor .ImagenesR {
+    margin-right: 30px;
+}
+
+.header-contenedor h1 {
+    margin-left: 20px;
+}
+
+.btn-volver {
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btn-volver a {
+    font-size: 18px;
+}
+
+/* BLOQUE 2: Contenedor de búsqueda */
+.contenedor-busqueda {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    min-height: 450px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.input-busqueda {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.img-lupa {
+    width: 100px;
+    max-width: 30%;
+}
+
+.texto-busqueda {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+/* BLOQUE 3: Tabla de mentores */
+.contenedor-mentores {
+    background-color: white;
+    width: 90%;
+    margin-top: 30px;
+    max-width: 650px;
+    min-height: 450px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-mentores h1 {
+    margin-bottom: 30px;
+}
+
+.tabla-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-mentores {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+.tabla-mentores th {
+    padding: 10px;
+    background-color: gainsboro;
+}
+
+.tabla-mentores td {
+    padding: 10px;
+}
+
+.progress-mentor {
+    width: 80%;
+    height: 35px;
+    accent-color: rgb(77, 35, 151);
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 2%;
+}
+
+/* ============================================================
+   RESPONSIVE PARA CELULAR (700px o menos)
+   ============================================================ */
+@media (max-width: 700px) {
+    .header-contenedor .ImagenesR {
+        margin-right: 15px;
+        width: 60px;
+    }
+
+    .header-contenedor h1 {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .btn-volver {
+        width: 100px;
+        height: 40px;
+    }
+
+    .btn-volver a {
+        font-size: 80%;
+    }
+
+    .contenedor-principal {
+        padding: 20px 3%;
+    }
+
+    .contenedor-busqueda {
+        width: 95%;
+        min-height: 350px;
+        padding: 15px;
+    }
+
+    .input-busqueda {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .img-lupa {
+        width: 70px;
+    }
+
+    .texto-busqueda {
+        font-size: 13px;
+    }
+
+    .contenedor-mentores {
+        width: 95%;
+        min-height: 350px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .contenedor-mentores h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .tabla-mentores {
+        min-width: 500px;
+        font-size: 12px;
+    }
+
+    .tabla-mentores th,
+    .tabla-mentores td {
+        padding: 8px;
+    }
+
+    .progress-mentor {
+        height: 25px;
+    }
+}

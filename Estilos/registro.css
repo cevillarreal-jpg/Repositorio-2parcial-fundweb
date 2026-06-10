@@ -149,25 +149,101 @@ a:hover{
 }
 
 /* =====================================================
-   BLOQUE 5: Pie de página
+   BLOQUE 5: RESPONSIVE (para pantallas de 700px o menos)
    ===================================================== */
 
-footer{
-    background-color: rgb(2, 5, 19);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 40px;
+@media (max-width: 700px) {
+    #encabezado {
+        height: auto;
+        padding: 15px;
+    }
+    
+    #encabezado h1 {
+        font-size: 18px;
+        padding-top: 0;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #lado_izquierdo {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #lado_izquierdo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    #lado_izquierdo div {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .ImagenesRegistro {
+        width: 60px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .introduccion {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    
+    details {
+        margin: 20px 10px;
+    }
+    
+    details li {
+        font-size: 14px;
+        margin: 10px 15px;
+    }
+    
+    #lado_derecho {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    #lado_derecho article {
+        flex-direction: column;
+    }
+    
+    .tituloFormulario, label {
+        font-size: 16px;
+    }
+    
+    .inputs {
+        width: 95%;
+        margin-left: 0;
+    }
+    
+    #ubicacion {
+        margin: 10px 0 0 10px;
+    }
+    
+    #siguiente {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 18px;
+    }
 }
 
-footer p{
-    margin-bottom: 10px;
-}
-
-#derechos{
-    font-size: 18px;
-}
-
-#finalFoter{
-    margin-bottom: 0px;
+@media (max-width: 480px) {
+    #lado_izquierdo h1 {
+        font-size: 18px;
+    }
+    
+    .introduccion {
+        font-size: 12px;
+    }
 }

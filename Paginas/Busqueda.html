@@ -8,133 +8,59 @@
     <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../Estilos/General.css">
+    <link rel="stylesheet" href="../Estilos/Busqueda.css">
 </head>
 
 <body>
 
-    <main style="background-color: white;
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    padding: 10px 3%;">
-
-        <div style="display: flex;
-        align-items: center;
-        flex-wrap: wrap;">
-
+    <main>
+        <div class="header-contenedor">
             <img src="../Recursos/panelUsuario/iconousuario.png"
             class="ImagenesR">
 
-            <h1 style="margin-left: 20px;">
+            <h1>
                 Ventana de búsqueda
             </h1>
-
         </div>
 
-        <button style="width: 140px;
-        height: 45px;
-        cursor: pointer;">
-
-            <a href="panelUsuario.html"
-            style="font-size: 18px;">
-
+        <button class="btn-volver">
+            <a href="panelUsuario.html">
                 <i class="fa-solid fa-house"></i>
                 Volver
-
             </a>
-
         </button>
-
     </main>
 
-    <aside style="display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 2%;">
-
-        <section style="background-color: white;
-        width: 90%;
-        max-width: 800px;
-        min-height: 450px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;">
-
+    <div class="contenedor-principal">
+        <section class="contenedor-busqueda">
             <input type="text"
             id="busqueda"
             name="busqueda"
             required
             placeholder="Busca por nombre o materia"
-            style="width: 90%;
-            height: 50px;
-            margin-bottom: 25px;">
+            class="input-busqueda">
 
             <img src="../Recursos/panelUsuario/lupa.png"
-            style="width: 100px;
-            max-width: 30%;">
+            class="img-lupa">
 
-            <p style="margin-top: 20px;
-            font-size: 15px;
-            text-align: center;
-            width: 90%;">
+            <p class="texto-busqueda">
                 Ingresa un nombre o materia para encontrar compañeros de estudio
             </p>
-
         </section>
 
-        <section style="background-color: white;
-        width: 90%; margin-top: 30px;
-        max-width: 650px;
-        min-height: 450px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;">
-
-            <h1 style=" margin-bottom: 30px;">
+        <section class="contenedor-mentores">
+            <h1>
                 Mejores Mentores segun sus conocimientos
             </h1>
 
-            <div style="width: 100%;
-            overflow-x: auto;">
-
-                <table border="1"
-                style="width: 100%;
-                border-collapse: collapse;
-                min-width: 550px;">
-
-                    <tr style="background-color: gainsboro;">
-
-                        <th style="padding: 10px;">
-                            Nombre
-                        </th>
-
-                        <th style="padding: 10px;">
-                            Edad
-                        </th>
-
-                        <th style="padding: 10px;">
-                            Carrera
-                        </th>
-
-                        <th style="padding: 10px;">
-                            Conocimientos Verificados
-                        </th>
-
+            <div class="tabla-wrapper">
+                <table class="tabla-mentores" border="1">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Carrera</th>
+                        <th>Conocimientos Verificados</th>
                     </tr>
-
                     <tr>
                         <td>Christopher</td>
                         <td>20</td>
@@ -143,13 +69,10 @@
                             <progress value="82"
                             max="100"
                             title="82/100"
-                            style="width: 80%;
-                            height: 35px;
-                            accent-color: rgb(77, 35, 151);">
+                            class="progress-mentor">
                             </progress>
                         </td>
                     </tr>
-
                     <tr>
                         <td>Eduardo</td>
                         <td>22</td>
@@ -158,13 +81,10 @@
                             <progress value="95"
                             max="100"
                             title="95/100"
-                            style="width: 80%;
-                            height: 35px;
-                            accent-color: rgb(77, 35, 151);">
+                            class="progress-mentor">
                             </progress>
                         </td>
                     </tr>
-
                     <tr>
                         <td>Bianka</td>
                         <td>18</td>
@@ -173,13 +93,10 @@
                             <progress value="75"
                             max="100"
                             title="75/100"
-                            style="width: 80%;
-                            height: 35px;
-                            accent-color: rgb(77, 35, 151);">
+                            class="progress-mentor">
                             </progress>
                         </td>
                     </tr>
-
                     <tr>
                         <td>María</td>
                         <td>22</td>
@@ -188,13 +105,10 @@
                             <progress value="100"
                             max="100"
                             title="100/100"
-                            style="width: 80%;
-                            height: 35px;
-                            accent-color: rgb(77, 35, 151);">
+                            class="progress-mentor">
                             </progress>
                         </td>
                     </tr>
-
                     <tr>
                         <td>Juan</td>
                         <td>19</td>
@@ -203,20 +117,25 @@
                             <progress value="68"
                             max="100"
                             title="68/100"
-                            style="width: 80%;
-                            height: 35px;
-                            accent-color: rgb(77, 35, 151);">
+                            class="progress-mentor">
                             </progress>
                         </td>
                     </tr>
-
                 </table>
-
             </div>
-
         </section>
+    </div>
 
-    </aside>
-
+    <footer>
+        <p id="derechos">
+            © 2026 - SaberCompartido
+        </p>
+        <p>
+            Sistema de asesoramiento académico - HTML Semántico y CSS Responsivo
+        </p>
+        <p id="finalFoter">
+            Plataforma de apoyo estudiantil
+        </p>
+    </footer>
 </body>
 </html>
