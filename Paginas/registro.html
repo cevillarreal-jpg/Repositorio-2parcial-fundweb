@@ -11,141 +11,75 @@
 </head>
 
 <body>
-
     <div id="encabezado">
         <h1>
             Interfaz de registro de nuevos estudiantes/mentores
         </h1>
     </div>
-
     <main>
-
-        <aside style="
-        width: 550px;
-        height: 400px;
-        margin-left: 100px;
-        margin-top: 60px;">
-
-            <h1 style="padding: 10px;
-            font-size: 36px;
-            margin-bottom: 2px;">
-
+        <aside id="lado_izquierdo">
+            <h1>
                 Únete a la comunidad, comparte conocimientos y aprende sin límites
-
             </h1>
-
-            <div style="display: flex;
-            align-items: center;">
-
+            <div>
                 <img src="../Recursos/registro/primerpunto.png"
-                class="ImagenesRegistro"
-                style="margin-left: 20px;">
-
-                <label style="font-size: 18px;
-                font-weight: normal;">
-
+                class="ImagenesRegistro">
+                <label class="introduccion">
                     Aprende junto a estudiantes que dominan las materias que necesitas mejorar
-
                 </label>
 
             </div>
 
-            <div style="display: flex;
-            align-items: center;
-            margin-top: 10px;">
-
+            <div>
                 <img src="../Recursos/registro/segundopunto.png"
-                style="width: 60px;
-                margin-left: 30px;">
-
-                <label style="font-size: 18px;
-                font-weight: normal;
-                margin-left: 10px;">
-
+                class="ImagenesRegistro">
+                <label class="introduccion">
                     Comparte tus conocimientos ayudando a otros estudiantes a crecer académicamente
-
                 </label>
-
             </div>
-
-            <div style="display: flex;
-            align-items: center;
-            margin-top: 10px;">
-
+            <div>
                 <img src="../Recursos/registro/tercerpunto.png"
-                class="ImagenesRegistro"
-                style="margin-left: 18px;">
-
-                <label style="font-size: 18px;
-                font-weight: normal;
-                margin-left: 7px;">
-
+                class="ImagenesRegistro">
+                <label class="introduccion">
                     Participa en una comunidad colaborativa donde todos aprenden y enseñan
-
                 </label>
-
             </div>
 
-            <details style="margin-left: 7px;">
-
+            <details>
                 <summary>
                     Conocimiento adicional
                 </summary>
-
-                <p style="font-size: 16px">
+                <li>
                     SaberCompartido es un proyecto independiente sin asociación
-                </p>
-
-                <p style="font-size: 16px">
+                </li>
+                <li>
                     No Puedes chatear con otros usuarios sin estar registrado
-                </p>
-
-                <p style="font-size: 16px">
+                </li>
+                <li>
                     Puedes chatear sin limite con los usuarios registrados
-                </p>
-
+                </li>
             </details>
-
         </aside>
 
-        <aside style="background-color: white;
-        width: 530px;
-        height: 470px;
-        margin-left: 20px;
-        margin-top: 50px;
-        padding-left: 20px;
-        padding-top: 10px;
-        border: 1px solid rgb(192, 194, 197);">
-
+        <aside id="lado_derecho">
             <form id="registro"
             method="post"
             action="materias.html">
-
-                <aside style="display: flex;">
-
-                    <div style="width: 270px;">
-
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                <article>
+                    <div>
+                        <h3 class="tituloFormulario">
                             Nombre Completo:
-
                         </h3>
-
                         <input
                         type="text"
                         id="nombre"
                         name="nombre"
                         required
                         placeholder="Christopher Villarreal"
-                        style="margin-left: 10px;
-                        width: 200px;">
+                        class="inputs">
 
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                        <h3 class="tituloFormulario">
                             Telefono:
-
                         </h3>
 
                         <input
@@ -155,12 +89,9 @@
                         required
                         placeholder="0980372175"
                         pattern="[0-9]{10}"
-                        style="margin-left: 10px;
-                        width: 200px;">
+                        class="inputs">
 
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                        <h3 class="tituloFormulario">
                             Contraseña:
 
                         </h3>
@@ -175,19 +106,12 @@
                         required
                         title="Debe incluir letras, números y al menos un carácter especial."
                         pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}"
-                        style="margin-left: 10px;
-                        width: 200px;">
-
+                        class="inputs">
                     </div>
 
-                    <div style="width: 270px;
-                    margin-left: 20px;">
-
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                    <div>
+                        <h3 class="tituloFormulario">
                             Correo Electrónico:
-
                         </h3>
 
                         <input
@@ -196,54 +120,40 @@
                         name="correo"
                         required
                         placeholder="correo@ejemplo.com"
-                        style="margin-left: 10px;
-                        width: 200px;">
+                        class="inputs">
 
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                        <h3 class="tituloFormulario">
                             Grado/Nivel de estudio:
-
                         </h3>
 
                         <select
                         id="grado"
                         name="grado"
                         required
-                        style="margin-left: 10px;
-                        width: 230px;">
+                        class="inputs">
 
                             <option value="">
                                 Selecciona tu grado
                             </option>
-
                             <option value="primero">
                                 Primero nivel
                             </option>
-
                             <option value="segundo">
                                 Segundo nivel
                             </option>
-
                             <option value="tercero">
                                 Tercero nivel
                             </option>
-
                             <option value="cuarto">
                                 Cuarto nivel
                             </option>
-
                             <option value="quinto">
                                 Quinto nivel
                             </option>
-
                         </select>
 
-                        <h3 style="font-size: 20px;
-                        margin-left: 10px;">
-
+                        <h3 class="tituloFormulario">
                             Confirmar contraseña:
-
                         </h3>
 
                         <input
@@ -256,78 +166,54 @@
                         title="Debe incluir letras, números y al menos un carácter especial."
                         pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}"
                         placeholder="••••••••••"
-                        style="margin-left: 10px;
-                        width: 200px;">
-
+                        class="inputs">
                     </div>
-
-                </aside>
-
+                </article>
             </form>
 
-            <label style="font-size: 20px;
-            margin-left: 20px;">
-
+            <label>
                 Selecciona tu ubicación
-
             </label>
 
-            <button style="margin-left: 20px;
-            margin-top: 20px;
-            width: 60px;
-            height: 40px;
-            background-color: white;
-            border: 2px solid gray;
-            padding: 0;">
-
+            <button id="ubicacion">
                 <a href="https://www.google.com/maps"
                 target="_blank">
-
                     <i class="fa-solid fa-location-dot" 
-                    style="color: black;"></i>
-
+                    ></i>
                 </a>
-
             </button>
 
             <br>
 
-            <button
+            <button id="siguiente"
             type="submit"
-            form="registro"
-            style="margin-left: 80px;
-            margin-top: 20px;
-            width: 350px;
-            height: 50px;
-            font-size: 24px;">
-
+            form="registro">
                 Siguiente
-
             </button>
 
-            <div style="width: 450px;
-            margin-top: 20px;
-            margin-left: 30px;
-            margin-bottom: 20px;">
+            <div class="lineadivisora"></div>
+
+            <div id="cuenta">
+                <label>
+                    ¿Ya tienes una cuenta?
+                </label>
+                <a href="login.html">
+                    Iniciar sesión
+                </a>
             </div>
-
-            <label style="font-size: 18px;
-            margin-left: 80px;">
-
-                ¿Ya tienes una cuenta?
-
-            </label>
-
-            <a href="login.html"
-            style="font-size: 18px;">
-
-                Iniciar sesión
-
-            </a>
-
         </aside>
-
     </main>
-
+    
+    <footer>
+        <p id="derechos">
+            © 2026 - SaberCompartido
+        </p>
+        <p>
+            Sistema de asesoramiento académico - HTML Semántico y CSS Responsivo
+        </p>
+        <p id="finalFoter">
+            Plataforma de apoyo estudiantil
+        </p>
+    </footer>
 </body>
 </html>

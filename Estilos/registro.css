@@ -1,3 +1,7 @@
+/* ================================================
+   BLOQUE 1: Encabezado
+   ================================================ */
+
 #encabezado{
     background-color: rgb(2, 5, 19);
     width: auto;
@@ -13,4 +17,157 @@
 main{
     display: flex;
     align-items: flex-start;
+}
+
+/* =====================================================
+   BLOQUE 2: Parte izquierda (Información de registro)
+   ===================================================== */
+
+#lado_izquierdo{
+    width: 550px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#lado_izquierdo h1{
+    padding: 10px;
+    font-size: 36px;
+    margin-bottom: 2px;
+}
+
+#lado_izquierdo div{
+    display: flex;
+    align-items: center;
+    margin:10px 0px;
+}
+
+.ImagenesRegistro{
+    margin-left: 20px;
+}
+
+.introduccion{
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+details{
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid rgb(192, 194, 197);
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+summary{
+    font-size:18px;
+    font-weight: bold;
+}
+
+details li{
+    font-size: 16px;
+    margin: 15px 30px;
+}
+
+/* =====================================================
+   BLOQUE 3: Parte derecha (Formulario de registro)
+   ===================================================== */
+
+#lado_derecho{
+    background-color: white;
+    width: 530px;
+    height: 500px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid rgb(192, 194, 197);
+}
+
+#lado_derecho article{
+    display: flex;
+}
+
+#lado_derecho div{
+    margin: 15px auto;
+}
+
+.tituloFormulario, label{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.inputs{
+    margin-left: 10px;
+    width: 200px;
+}
+
+/* =====================================================
+   BLOQUE 4: Botones funcionales
+   ===================================================== */
+
+#ubicacion{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid gray;
+    padding: 0;
+}
+
+#ubicacion i{
+    font-size: 20px;
+    color: black;
+}
+
+#siguiente{
+    margin: 20px 70px;
+    width: 70%;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+}
+
+#cuenta{
+    text-align: center;
+}
+
+#cuenta label{
+    font-size: 16px;
+}
+
+a{
+    font-size: 16px;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+/* =====================================================
+   BLOQUE 5: Pie de página
+   ===================================================== */
+
+footer{
+    background-color: rgb(2, 5, 19);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+#derechos{
+    font-size: 18px;
+}
+
+#finalFoter{
+    margin-bottom: 0px;
 }

@@ -1,0 +1,89 @@
+main{
+    display: flex; 
+    justify-content: center; 
+    gap: 4%; flex-wrap: wrap; 
+    width: 100%; 
+    padding-top: 40px; 
+    padding-bottom: 40px;
+}
+
+.contenedores{
+    width: 42%; min-width: 320px;
+    padding-bottom: 30px;
+}
+
+.contenedores h1{
+    text-align: center; 
+    font-size: 22px; 
+    padding-top: 50px;
+}
+
+.contenedores h2{
+    text-align: center; 
+    font-size: 16px; 
+    font-weight: lighter;
+}
+
+.contenedores article{
+    background-color: rgb(241, 187, 187);
+    width: 85%; height: 50px; display: flex; align-items: center;
+    border-radius: 12px; margin-left: auto; margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid rgb(153, 45, 63);
+}
+
+.contenedores aside{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+p{
+    font-size: 16px; 
+    color: rgb(153, 45, 63); 
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+img{
+    margin-left: 10px; 
+    border-radius: 10px;
+}
+
+label{
+    font-size: 16px; 
+    margin-left: 20px;
+}
+
+button{
+    width: 60%; 
+    height: 50px;
+    font-size: 22px;
+}
+
+.check{
+    margin-left: auto; 
+    margin-right: 20px;
+}
+
+.ColumnasT{
+    width: 45%; 
+    min-width: 240px;
+}
+
+.tarjeta{
+    display: flex; 
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid black;
+    width: 90%;
+    height: 60px; 
+    margin-top: 20px;
+}
+
+.contBoton{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 40px;
+}

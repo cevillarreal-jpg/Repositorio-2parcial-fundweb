@@ -7,303 +7,169 @@
     <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../Estilos/General.css">
+    <link rel="stylesheet" href="../Estilos/materias.css">
 </head>
 
 <body>
 
     <form method="post" action="login.html">
-
-        <main style="display: flex; justify-content: center; gap: 4%; flex-wrap: wrap; width: 100%; padding-top: 40px; padding-bottom: 40px;">
-
-            <section style="width: 42%; min-width: 320px;
-            padding-bottom: 30px;">
-
-                <h1 style="text-align: center; font-size: 22px; padding-top: 50px;">
+        <main>
+            <section class="contenedores">
+                <h1>
                     ¿Qué materias Dominas?
                 </h1>
-
-                <h2 style="text-align: center; font-size: 16px; font-weight: lighter;">
+                <h2>
                     Selecciona todas las materias que puedes enseñar
                 </h2>
-
-                <main style="background-color: rgb(241, 187, 187);
-                width: 85%; height: 50px; display: flex; align-items: center;
-                border-radius: 12px; margin-left: auto; margin-right: auto;
-                margin-top: 30px;
-                border: 1px solid rgb(153, 45, 63);">
-
-                    <p style="font-size: 16px; color: rgb(153, 45, 63); font-weight: 600;
-                    margin-left: 20px;">
+                <article>
+                    <p>
                         Debe seleccionar al menos una materia que pueda enseñar
                     </p>
-                </main>
-
-                <aside style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-
-                    <div style="width: 45%; min-width: 240px;">
-
-                        <div style="margin-top: 20px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(184, 226, 245); border-radius: 12px;
-                            border: 2px solid rgb(44, 94, 141); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libro.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Base de Datos
-                                </label>
-                                <input type="checkbox" name="materia_dominada" value="Base de Datos"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                </article>
+                <aside>
+                    <div class="ColumnasT">
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libro.png" alt="libro">
+                            <label>
+                                Base de Datos
+                            </label>
+                            <input type="checkbox" name="materia_dominada" value="Base de Datos"
+                            class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(238, 238, 207); border-radius: 12px;
-                            border: 2px solid rgb(207, 130, 14); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libronaranja.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Fundamentos Web
-                                </label>
-                                <input type="checkbox" name="materia_dominada" value="Fundamentos"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libronaranja.png" alt="libro">
+                            <label>
+                                Fundamentos Web
+                            </label>
+                            <input type="checkbox" name="materia_dominada" value="Fundamentos"
+                            class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(193, 230, 198); border-radius: 12px;
-                            border: 2px solid rgb(73, 134, 44); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libroverde.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 25px;">
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libroverde.png" alt="libro">
+                                <label>
                                     Programación
                                 </label>
                                 <input type="checkbox" name="materia_dominada" value="Programación"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                                class="check">
                         </div>
-
                     </div>
 
-                    <div style="width: 45%; min-width: 240px;">
-
-                        <div style="margin-top: 20px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(235, 184, 245); border-radius: 12px;
-                            border: 2px solid rgb(81, 44, 141); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libromorado.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
+                    <div class="ColumnasT">
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libromorado.png" alt="libro">
+                                <label>
                                     Admin Sistemas
                                 </label>
                                 <input type="checkbox" name="materia_dominada" value="Admin Sistemas"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                                class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(248, 183, 183); border-radius: 12px;
-                            border: 2px solid rgb(207, 14, 14); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/librorojo.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Interfaces Gráficas
-                                </label>
-                                <input type="checkbox" name="materia_dominada" value="Interfaces Gráficas"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/librorojo.png" alt="libro">
+                            <label>
+                                Interfaces Gráficas
+                            </label>
+                            <input type="checkbox" name="materia_dominada" value="Interfaces Gráficas"
+                            class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(180, 255, 255); border-radius: 12px;
-                            border: 2px solid rgb(41, 121, 110); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libroceleste.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 25px;">
-                                    Redes
-                                </label>
-                                <input type="checkbox" name="materia_dominada" value="Redes"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libroceleste.png" alt="libro">
+                            <label>
+                                Redes
+                            </label>
+                            <input type="checkbox" name="materia_dominada" value="Redes"
+                            class="check">
                         </div>
-
                     </div>
-
                 </aside>
-
-                <div style="display: flex; justify-content: center; margin-top: 40px;">
-                    <button style="width: 60%; height: 50px;
-                    font-size: 22px;">
-
+                <div class="contBoton">
+                    <button>
                         <a href="registro.html">
                             Volver
                         </a>
-
                     </button>
                 </div>
-
             </section>
 
-            <section style="width: 42%; min-width: 320px;
-            padding-bottom: 30px;">
 
-                <h1 style="text-align: center; font-size: 22px; padding-top: 50px;">
+
+            <section class="contenedores">
+
+                <h1>
                     ¿Qué materias Deseas Aprender?
                 </h1>
-
-                <h2 style="text-align: center; font-size: 16px; font-weight: lighter;">
+                <h2>
                     Selecciona todas las materias en las que necesitas ayuda
                 </h2>
-
-                <main style="background-color: rgb(241, 187, 187);
-                width: 85%; height: 50px; display: flex; align-items: center;
-                border-radius: 12px; margin-left: auto; margin-right: auto;
-                margin-top: 30px;
-                border: 1px solid rgb(153, 45, 63);">
-
-                    <p style="font-size: 16px; color: rgb(153, 45, 63); font-weight: 600;
-                    margin-left: 20px;">
+                <article>
+                    <p>
                         Debe seleccionar al menos una materia que desees aprender
                     </p>
-                </main>
+                </article>
 
-                <aside style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-
-                    <div style="width: 45%; min-width: 240px;">
-
-                        <div style="margin-top: 20px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(184, 226, 245); border-radius: 12px;
-                            border: 2px solid rgb(44, 94, 141); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libro.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Base de Datos
-                                </label>
-                                <input type="checkbox" name="materia_deseada" value="Base de Datos"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                <aside>
+                    <div class="ColumnasT">
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libro.png" alt="libro">
+                            <label>
+                                Base de Datos
+                            </label>
+                            <input type="checkbox" name="materia_deseada" value="Base de Datos"
+                            class="check">
                         </div>
 
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(238, 238, 207); border-radius: 12px;
-                            border: 2px solid rgb(207, 130, 14); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libronaranja.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Fundamentos Web
-                                </label>
-                                <input type="checkbox" name="materia_deseada" value="Fundamentos Web"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libronaranja.png" alt="libro">
+                            <label>
+                                Fundamentos Web
+                            </label>
+                            <input type="checkbox" name="materia_deseada" value="Fundamentos Web"
+                            class="check">
                         </div>
 
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(193, 230, 198); border-radius: 12px;
-                            border: 2px solid rgb(73, 134, 44); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libroverde.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 25px;">
-                                    Programación
-                                </label>
-                                <input type="checkbox" name="materia_deseada" value="Programación"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libroverde.png" alt="libro">
+                            <label>
+                                Programación
+                            </label>
+                            <input type="checkbox" name="materia_deseada" value="Programación"
+                            class="check">
                         </div>
-
                     </div>
 
-                    <div style="width: 45%; min-width: 240px;">
-
-                        <div style="margin-top: 20px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(235, 184, 245); border-radius: 12px;
-                            border: 2px solid rgb(81, 44, 141); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libromorado.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Admin Sistemas
-                                </label>
+                    <div class="ColumnasT">
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libromorado.png" alt="libro">
+                            <label>
+                                Admin Sistemas
+                            </label>
                                 <input type="checkbox" name="materia_deseada" value="Admin Sistemas"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                                class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(248, 183, 183); border-radius: 12px;
-                            border: 2px solid rgb(207, 14, 14); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/librorojo.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 20px;">
-                                    Interfaces Gráficas
-                                </label>
-                                <input type="checkbox" name="materia_deseada" value="Interfaces Gráficas"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/librorojo.png" alt="libro">
+                            <label>
+                                Interfaces Gráficas
+                            </label>
+                            <input type="checkbox" name="materia_deseada" value="Interfaces Gráficas"
+                            class="check">
                         </div>
-
-                        <div style="margin-top: 25px;">
-                            <div style="display: flex; align-items: center;
-                            background-color: rgb(180, 255, 255); border-radius: 12px;
-                            border: 2px solid rgb(41, 121, 110); width: 100%;
-                            height: 60px;">
-                                <img src="../Recursos/registro/libroceleste.png" alt="libro"
-                                style="margin-left: 10px; border-radius: 10px;">
-                                <label style="font-size: 16px; margin-left: 25px;">
-                                    Redes
-                                </label>
-                                <input type="checkbox" name="materia_deseada" value="Redes"
-                                class="check"
-                                style="margin-left: auto; margin-right: 20px;">
-                            </div>
+                        <div class="tarjeta">
+                            <img src="../Recursos/registro/libroceleste.png" alt="libro">
+                            <label>
+                                Redes
+                            </label>
+                            <input type="checkbox" name="materia_deseada" value="Redes"
+                            class="check">
                         </div>
-
                     </div>
-
                 </aside>
-
-                <div style="display: flex; justify-content: center; margin-top: 40px;">
-                    <button type="submit" style="width: 60%; height: 50px;
-                    font-size: 22px; color: white;">
-
+                <div class="contBoton">
+                    <button>
                         Completar Registro
-
                     </button>
                 </div>
-
             </section>
-
         </main>
-
     </form>
-
 </body>
 </html>
